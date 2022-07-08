@@ -1,0 +1,5 @@
+![Capture](https://user-images.githubusercontent.com/70474312/177979794-919ad842-7399-4986-8ca2-ffa19e04e6f2.PNG)
+Here is an interactive dashboard that lets you analyze your cellular logs data from the app Tower Collector.
+
+<h2>Open Cell Id</h2>
+Before we move on to what Tower Collector actually does, its important to talk a bit about Open Cell Id. It is an initiative presented by Unwired Labs and s a collaborative community project that collects GPS positions of cell towers and their corresponding location area identity. More than 49,000 contributors are registered with OpenCellID, contributing more than 1 million new measurements every day on average to the OpenCellID database. As of August 21, 2017 the database contained 35.5 million unique cells and 2.1 billion unique measurements.[citation needed] OpenCellID publishes an aggregate data set of cell locations licensed under a Creative Commons Attribution-ShareAlike 4.0 International License with the intention of promoting free use and redistribution of the data. 
