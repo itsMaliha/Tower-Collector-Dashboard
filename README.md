@@ -14,9 +14,32 @@ Take a look at this OpenCellId heatmap from 2013.
 Among other applications, Tower Collector is also an app used to contribute to Open Cell Id. It also allows you to keep track of your data based on numerous features such as mcc, mnc, cell id, device etc.
 
 Here is a small snippet of some features gathered from the application.
+
 ![image](https://user-images.githubusercontent.com/70474312/177981411-e5061ec3-0190-49fa-ba4f-5225e395e469.png)
 
 <h3>Data Processing</h3>
 Before moving to the actual visualization, we need to process our data. 
 <h4>mcc and mnc</h4>
 Here the mcc gives the mobile country code and since all of my data was from Pakistan I did not decode this feature however the mnc - Mobile Network Code represented the arious networks I was in contact with. Initially it is represented by numbers if you look at the snippet above. To address that I created a column using Power BI's conditional column and decoded the data to the different networks in question. 
+
+<h4rsrp, rsrq, snr</h4>
+All of these features represent signal strength. These are again decoded using conditional columns according to the following table.
+
+![image](https://user-images.githubusercontent.com/70474312/177986327-fe3acae4-636f-4ac6-8ea8-184129e1c21b.png)
+
+<h4>Altitude</h4>
+I also took the liberty of decoding the altitude values into categories of high and low for the sake of analysis.
+
+<h4>Speed and Time</h4>
+Originally the speed is read as m/s as opposed to km/h and date and time in UTC format. Since I am from Pakistan, I converted the Date/Time to GMT+5 using excel as opposed to Power BI  followed by the speed conversion as well.
+
+These are the columns we created using the above preprocessing.
+
+![image](https://user-images.githubusercontent.com/70474312/177986552-72b73c3f-99e6-402a-9c32-a2887977a82a.png)
+
+Here is what the overall dashboard eventually looks like.
+![image](https://user-images.githubusercontent.com/70474312/177986653-338ca00c-102a-4a6f-b37c-0c6256692d5d.png)
+
+You can access this dashboard by downloading the pbix file and loading it in your local Power BI. Because I used a consolidated dataset, I am not going to be shring the data. However, you can collect your own data using the Tower Collector app by Adam Zamojski.
+
+Hope this helps!
